@@ -9,12 +9,12 @@ abstract class Duck
     {
     }
 
-    public function setFlyBehavior($fb)
+    public function setFlyBehavior(FlyBehavior $fb)
     {
         $this->flyBehavior = $fb;
     }
 
-    public function setQuackBehavior($qb)
+    public function setQuackBehavior(QuackBehavior $qb)
     {
         $this->quackBehavior = $qb;
     }
