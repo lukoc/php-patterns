@@ -13,7 +13,7 @@ class ChicagoStyleClamPizza extends Pizza
         array_push($this->toppings, "Frozen Clams from Chesapeake Bay");
     }
 
-    protected function cut()
+    public function cut()
     {
         echo "Cutting the pizza into square slices";
     }

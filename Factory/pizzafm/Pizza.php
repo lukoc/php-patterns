@@ -6,11 +6,11 @@ abstract class Pizza
     protected $name;
     protected $dough;
     protected $sauce;
-    protected $toppings;
+    protected $toppings = array();
 
     public function prepare()
     {
-        echo "Preparing " . $this->$name;
+        echo "Preparing " . $this->name;
         echo "Tossing dough...";
         echo "Adding sauce...";
         echo "Adding toppings: ";

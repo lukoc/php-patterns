@@ -7,17 +7,13 @@ class ChicagoPizzaStore extends PizzaStore
     {
         if ($item === "cheese") {
             return new ChicagoStyleCheesePizza();
-        } else {
-            if ($item === "veggie") {
-                return new ChicagoStyleVeggiePizza();
-            } else {
-                if ($item === "clam") {
-                    return new ChicagoStylePepperoniPizza();
-                } else {
-                    return null;
-                }
-            }
-        }
+        } else  if ($item === "veggie") {
+            return new ChicagoStyleVeggiePizza();
+        } else  if ($item === "clam") {
+            return new ChicagoStylePepperoniPizza();
+        } else  if ($item === "pepperoni") {
+            return new ChicagoStylePepperoniPizza();
+        } else return null;
 
     }
 }

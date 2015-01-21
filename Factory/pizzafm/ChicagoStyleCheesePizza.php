@@ -12,7 +12,7 @@ class ChicagoStyleCheesePizza extends Pizza
         array_push($this->toppings, "Shredded Mozzarella Cheese");
     }
 
-    protected function cut()
+    public function cut()
     {
         echo "Cutting the pizza into square slices";
     }

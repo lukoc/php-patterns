@@ -11,5 +11,3 @@ class CheesePizza extends Pizza
         array_push($this->toppings, "Parmesan");
     }
 }
-
- 

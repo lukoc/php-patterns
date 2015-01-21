@@ -7,7 +7,7 @@ abstract class PizzaStore
 
     public function orderPizza($type)
     {
-        $pizza = createPizza($type);
+        $pizza = $this->createPizza($type);
         echo "--- Making a " . $pizza->getName() . " ---";
         $pizza->prepare();
         $pizza->bake();
